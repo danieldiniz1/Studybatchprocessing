@@ -16,3 +16,21 @@
 [2023-02-09 17:49:34,941] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [SpringApplicationShutdownHook] [650] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
 [2023-02-09 17:49:34,946] [com.zaxxer.hikari.HikariDataSource] [SpringApplicationShutdownHook] [350] [INFO ] HikariPool-1 - Shutdown initiated...
 [2023-02-09 17:49:34,958] [com.zaxxer.hikari.HikariDataSource] [SpringApplicationShutdownHook] [352] [INFO ] HikariPool-1 - Shutdown completed.
+[2023-02-09 17:59:58,197] [org.springframework.boot.StartupInfoLogger] [main] [51] [INFO ] Starting StudybatchprocessingApplication using Java 17.0.5 with PID 22516 (C:\training\batch\studybatchprocessing\target\classes started by dalexadi in C:\training\batch\studybatchprocessing)
+[2023-02-09 17:59:58,202] [org.springframework.boot.SpringApplication] [main] [636] [INFO ] The following 1 profile is active: "dev"
+[2023-02-09 17:59:58,775] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [138] [INFO ] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-02-09 17:59:58,797] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [208] [INFO ] Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+[2023-02-09 17:59:59,058] [com.zaxxer.hikari.HikariDataSource] [main] [110] [INFO ] HikariPool-1 - Starting...
+[2023-02-09 17:59:59,501] [com.zaxxer.hikari.pool.HikariPool] [main] [565] [INFO ] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7dbe2ebf
+[2023-02-09 17:59:59,503] [com.zaxxer.hikari.HikariDataSource] [main] [123] [INFO ] HikariPool-1 - Start completed.
+[2023-02-09 17:59:59,640] [org.hibernate.jpa.internal.util.LogHelper] [main] [31] [INFO ] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-02-09 17:59:59,691] [org.hibernate.Version] [main] [44] [INFO ] HHH000412: Hibernate ORM core version 6.1.6.Final
+[2023-02-09 17:59:59,894] [org.hibernate.boot.internal.MetadataBuilderImpl$MetadataBuildingOptionsImpl] [main] [626] [WARN ] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2023-02-09 18:00:00,096] [org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl] [main] [66] [INFO ] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[2023-02-09 18:00:00,380] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] [main] [51] [INFO ] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-02-09 18:00:00,394] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [main] [437] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-02-09 18:00:00,645] [org.springframework.boot.StartupInfoLogger] [main] [57] [INFO ] Started StudybatchprocessingApplication in 3.012 seconds (process running for 3.741)
+[2023-02-09 18:00:00,648] [org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner] [main] [160] [INFO ] Running default command line with: []
+[2023-02-09 18:00:00,655] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [SpringApplicationShutdownHook] [650] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-02-09 18:00:00,659] [com.zaxxer.hikari.HikariDataSource] [SpringApplicationShutdownHook] [350] [INFO ] HikariPool-1 - Shutdown initiated...
+[2023-02-09 18:00:00,669] [com.zaxxer.hikari.HikariDataSource] [SpringApplicationShutdownHook] [352] [INFO ] HikariPool-1 - Shutdown completed.
