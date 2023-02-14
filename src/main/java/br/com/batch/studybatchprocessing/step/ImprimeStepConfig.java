@@ -1,38 +1,30 @@
-package br.com.batch.studybatchprocessing.config;
+package br.com.batch.studybatchprocessing.step;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.StepContribution;
-import org.springframework.batch.core.job.builder.JobBuilder;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.builder.StepBuilder;
+import org.springframework.batch.core.step.tasklet.Tasklet;
 import org.springframework.batch.repeat.RepeatStatus;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
-public class BatchConfig {
+public class ImprimeStepConfig {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    @Bean
-    public Job job(JobRepository jobRepository, Step step){
-        return new JobBuilder("job", jobRepository)
-                .start(step)
-                .build();
-    }
 
     @Bean
-    public Step step(JobRepository jobRepository, PlatformTransactionManager transactionManager){
+    public Step step(JobRepository jobRepository,
+                     PlatformTransactionManager transactionManager,
+                     Tasklet imprimeTasklet){
         return new StepBuilder("step",jobRepository)
-                .tasklet((StepContribution contribution, ChunkContext chunkContext) -> {
-                    LOGGER.info("Olá Mundo");
-                    return RepeatStatus.FINISHED;
-                },transactionManager)
+                .tasklet(imprimeTasklet,transactionManager)
                 .build();
     }
 }
