@@ -28,13 +28,13 @@ public class BatchConfig {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    @Bean
-    public Job job(JobRepository jobRepository, Step step){
-        return new JobBuilder("job", jobRepository)
-                .start(step)
-                .incrementer(new RunIdIncrementer())
-                .build();
-    }
+//    @Bean
+//    public Job job(JobRepository jobRepository, Step step){
+//        return new JobBuilder("job", jobRepository)
+//                .start(step)
+//                .incrementer(new RunIdIncrementer())
+//                .build();
+//    }
 
 //    @Bean
 //    public Step step(JobRepository jobRepository, PlatformTransactionManager transactionManager){
